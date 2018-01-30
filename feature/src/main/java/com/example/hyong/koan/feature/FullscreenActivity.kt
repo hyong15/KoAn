@@ -1,8 +1,9 @@
 package com.example.hyong.koan.feature
 
-import android.support.v7.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
+import android.support.v7.app.AppCompatActivity
 import android.view.View
 import kotlinx.android.synthetic.main.activity_fullscreen.*
 
@@ -60,6 +61,9 @@ class FullscreenActivity : AppCompatActivity() {
         // operations to prevent the jarring behavior of controls going away
         // while interacting with the UI.
         dummy_button.setOnTouchListener(mDelayHideTouchListener)
+        ko_button.setOnClickListener {
+            startActivity(Intent(this@FullscreenActivity, KoActivity::class.java))
+        }
     }
 
     override fun onPostCreate(savedInstanceState: Bundle?) {
