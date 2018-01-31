@@ -1,10 +1,11 @@
-package com.example.hyong.koan.feature
+package com.example.hyong.koan.feature.kotlinanko
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.widget.Toast
+import com.example.hyong.koan.feature.R
 
 class KoActivity : AppCompatActivity() {
 
@@ -22,8 +23,8 @@ class KoActivity : AppCompatActivity() {
     }
 
     private fun nullExercise() {
-        var notNullArtist:BeanData?=null
-        val beanData:BeanData? = BeanData(0, "s", "1")
+        var notNullArtist: BeanData?=null
+        val beanData: BeanData? = BeanData(0, "s", "1")
         val toString = beanData?.toString()
         val name = beanData?.name ?: "empty"
         Log.e("HYONG1", name)

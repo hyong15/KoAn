@@ -3,5 +3,6 @@
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="koactivity">koActivity</string>
+    <string name="surfaceview_button">surfaceview_button</string>
 
 </resources>

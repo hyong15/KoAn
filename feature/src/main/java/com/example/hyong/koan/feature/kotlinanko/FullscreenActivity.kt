@@ -1,10 +1,12 @@
-package com.example.hyong.koan.feature
+package com.example.hyong.koan.feature.kotlinanko
 
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.support.v7.app.AppCompatActivity
 import android.view.View
+import com.example.hyong.koan.feature.R
+import com.example.hyong.koan.feature.surfaceviewdemo.SurfaceViewDemoActivity
 import kotlinx.android.synthetic.main.activity_fullscreen.*
 
 /**
@@ -63,6 +65,9 @@ class FullscreenActivity : AppCompatActivity() {
         dummy_button.setOnTouchListener(mDelayHideTouchListener)
         ko_button.setOnClickListener {
             startActivity(Intent(this@FullscreenActivity, KoActivity::class.java))
+        }
+        surfaceview_button.setOnClickListener {
+            startActivity(Intent(FullscreenActivity@this, SurfaceViewDemoActivity::class.java))
         }
     }
 

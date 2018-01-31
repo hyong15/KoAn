@@ -1,4 +1,4 @@
-package com.example.hyong.koan.feature
+package com.example.hyong.koan.feature.kotlinanko
 
 /**
  * Bean
